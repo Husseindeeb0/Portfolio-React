@@ -89,7 +89,10 @@
 }
 
 @media screen and (max-width: 800px) {
+    .page-title {
+        margin-left: 2rem;
+    }
     .projects {
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
 }
