@@ -48,7 +48,7 @@ const About = () => {
           <p>
             <u>Age:</u> 18 years old <br />
             <u>Address:</u> Lebanon <br />
-            <u>Number:</u> +1 647 799 5004
+            <u>Number:</u> +961 70 063 612
           </p>
         </div>
 

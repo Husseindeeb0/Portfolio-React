@@ -9,6 +9,7 @@ import image_3 from '../../assets/images/shopping.jpg';
 import image_4 from '../../assets/images/weather.jpg';
 import image_5 from '../../assets/images/test.png';
 import image_6 from '../../assets/images/drum.png';
+import image_7 from '../../assets/images/test_generator.png';
 import "./index.scss";
 
 const Portfolio = () => { 
@@ -35,6 +36,20 @@ const Portfolio = () => {
                     />
                 </h1>
                 <div className="projects">
+                <div className="project">
+                        <div className="image-box">
+                            <img src={image_7} alt="Project image" />
+                        </div>
+                        <div className="project-title">
+                            <p>Test Generator</p>
+                        </div>
+                        <div className="project-actions">
+                            <a href="https://github.com/Kiritsu0/Test-Generator" target="_blank" className="icon" title="Code source">
+                                <FontAwesomeIcon icon={faGithub} color="black" />
+                            </a>
+                            <a href="https://kiritsu0.github.io/Test-Generator/" target="_blank" className="button">Visit</a>
+                        </div>
+                    </div>
                     <div className="project">
                         <div className="image-box">
                             <img src={image_1} alt="Project image" />
