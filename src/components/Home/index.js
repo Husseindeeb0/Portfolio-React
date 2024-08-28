@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
-import LogoTitle from '../../assets/images/letter-H.png';
-import Logo from './Logo';
-import './index.scss';
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import Loader from 'react-loaders'
+import AnimatedLetters from '../AnimatedLetters'
+import LogoTitle from '../../assets/images/letter-H.png'
+import Logo from './Logo'
+import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -43,10 +43,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="Web Developer Name"
-            />
+            <img src={LogoTitle} alt="Web Developer Name" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}

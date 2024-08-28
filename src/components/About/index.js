@@ -6,7 +6,7 @@ import {
   faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss } from 'react-icons/si'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,18 +33,21 @@ const About = () => {
             />
           </h1>
           <p>
-            I am a highly ambitious front-end developer seeking a role in a dynamic company
-            that offers opportunities to work with the latest technologies
-            and engage in diverse projects. With a strong foundation in front-end development,
-            I am eager to contribute to impactful applications.
+            I am a highly ambitious front-end developer seeking a role in a
+            dynamic company that offers opportunities to work with the latest
+            technologies and engage in diverse projects. With a strong
+            foundation in front-end development, I am eager to contribute to
+            impactful applications.
           </p>
           <p align="LEFT">
-            I am confident in my abilities, naturally curious,
-            and constantly honing my problem-solving skills and critical thinking skills.
-            My passion for technology drives me to stay updated
-            with industry trends and continuously improve my craft.
+            I am confident in my abilities, naturally curious, and constantly
+            honing my problem-solving skills and critical thinking skills. My
+            passion for technology drives me to stay updated with industry
+            trends and continuously improve my craft.
           </p>
-          <p style={{color: "#efd81d", fontSize: '18px'}}>Personal Information</p>
+          <p style={{ color: '#efd81d', fontSize: '18px' }}>
+            Personal Information
+          </p>
           <p>
             <u>Birth Date:</u> 2006-02-27 <br />
             <u>Address:</u> Lebanon <br />

@@ -19,7 +19,12 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_598bddc', 'template_wybv7rh', form.current, '5VDh_tvOX5ccybQ12')
+      .sendForm(
+        'service_598bddc',
+        'template_wybv7rh',
+        form.current,
+        '5VDh_tvOX5ccybQ12'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
