@@ -5,12 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import image_1 from '../../assets/images/facebook.png'
 import image_2 from '../../assets/images/recipe.jpg'
-import image_3 from '../../assets/images/shopping.jpg'
-import image_4 from '../../assets/images/weather.jpg'
-import image_5 from '../../assets/images/test.png'
-import image_6 from '../../assets/images/drum.png'
-import image_7 from '../../assets/images/test_generator.png'
-import image_8 from '../../assets/images/freelancehub.png'
+import image_3 from '../../assets/images/weather.jpg'
+import image_4 from '../../assets/images/test.png'
+import image_5 from '../../assets/images/test_generator.png'
+import image_6 from '../../assets/images/freelancehub.png'
 import './index.scss'
 
 const Portfolio = () => {
@@ -18,14 +16,14 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      image: image_8,
+      image: image_6,
       title: 'FreelanceHub',
       githubLink: 'https://github.com/Kiritsu0/FreelanceHub',
-      liveLink: 'https://kiritsu0.github.io/FreelanceHub/',
+      liveLink: 'https://freelancehub0.netlify.app/',
     },
     {
       id: 2,
-      image: image_7,
+      image: image_5,
       title: 'Test Generator',
       githubLink: 'https://github.com/Kiritsu0/Test-Generator',
       liveLink: 'https://kiritsu0.github.io/Test-Generator/',
@@ -42,36 +40,21 @@ const Portfolio = () => {
       image: image_1,
       title: 'Facebook Clone',
       githubLink: 'https://github.com/Kiritsu0/Facebook-Clone',
-      liveLink: 'https://kiritsu0.github.io/Facebook-Clone/',
+      liveLink: 'https://social-clone0.netlify.app/',
     },
-
     {
       id: 5,
       image: image_3,
-      title: 'Shopping Cart',
-      githubLink: 'https://github.com/Kiritsu0/Shopping-Cart-React',
-      liveLink: 'https://kiritsu0.github.io/Shopping-Cart-React/',
-    },
-    {
-      id: 6,
-      image: image_4,
       title: 'Weather App',
       githubLink: 'https://github.com/Kiritsu0/React-Weather-App',
       liveLink: 'https://kiritsu0.github.io/React-Weather-App/',
     },
     {
-      id: 7,
-      image: image_5,
+      id: 6,
+      image: image_4,
       title: 'Test Page',
       githubLink: 'https://github.com/Kiritsu0/React-Quiz-App',
       liveLink: 'https://kiritsu0.github.io/React-Quiz-App/',
-    },
-    {
-      id: 8,
-      image: image_6,
-      title: 'Drum Machine',
-      githubLink: 'https://github.com/Kiritsu0/React-Drum-Machine',
-      liveLink: 'https://kiritsu0.github.io/React-Drum-Machine/',
     },
   ]
 
