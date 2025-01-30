@@ -1,11 +1,8 @@
 import './index.scss'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import LogoS from '../../assets/images/coding-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLinkedin,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
   faUser,
@@ -18,6 +15,24 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
+  const [showAboutOptions, setShowAbout] = useState(false)
+  const sidebarRef = useRef(null) // Reference to the sidebar
+
+  // Close the sidebar when clicking outside of it
+  const handleClickOutside = (event) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      setShowAbout(false) // Close sidebar
+    }
+  }
+
+  useEffect(() => {
+    if (showAboutOptions === true) {
+      document.addEventListener('click', handleClickOutside)
+      return () => {
+        document.removeEventListener('click', handleClickOutside)
+      }
+    }
+  }, [showAboutOptions])
 
   return (
     <div className="nav-bar">
@@ -33,14 +48,38 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="about-link"
-          to="/about"
-          onClick={() => setShowNav(false)}
+        <div
+          className={`about-link ${showAboutOptions ? 'active' : ''}`}
+          onClick={() => setShowAbout((prev) => !prev)}
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
+        </div>
+        {showAboutOptions && (
+          <div className="about-options" ref={sidebarRef}>
+            <NavLink
+              activeclassname=""
+              className="about-option"
+              to="/aboutFrontend"
+              onClick={() => {
+                setShowAbout(false)
+                setShowNav(false)
+              }}
+            >
+              About Frontend
+            </NavLink>
+            <NavLink
+              activeclassname=""
+              className="about-option"
+              to="/aboutBackend"
+              onClick={() => {
+                setShowAbout(false)
+                setShowNav(false)
+              }}
+            >
+              About Backend
+            </NavLink>
+          </div>
+        )}
         <NavLink
           activeclassname="active"
           className="portfolio-link"

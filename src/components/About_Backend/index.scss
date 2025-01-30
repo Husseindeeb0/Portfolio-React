@@ -1,0 +1,78 @@
+.stage-circular-mot {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+.circular-spinner {
+  animation: circularMotion 6s infinite linear;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+  height: 300px;
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px lightyellow;
+  }
+
+  .side1 {
+    transform: rotateY(0deg) translateZ(150px); // Front side
+    color: #339933;
+  }
+  .side2 {
+    transform: rotateY(90deg) translateZ(150px); // Right side
+    color: #000000;
+  }
+  .side3 {
+    transform: rotateY(180deg) translateZ(150px); // Back side
+    color: #47A248;
+  }
+  .side4 {
+    transform: rotateY(-90deg) translateZ(150px); // Left side
+  }
+  .side4 img {
+    width: 12rem;
+  }
+}
+
+@keyframes circularMotion {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg); // Smooth transition to the next side
+  }
+  50% {
+    transform: rotateY(180deg); // Midpoint
+  }
+  75% {
+    transform: rotateY(270deg); // Almost a full circle
+  }
+  100% {
+    transform: rotateY(360deg); // Back to the start
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text-zone {
+    h1 {
+      margin-left: 2rem;
+    }
+  }
+}

@@ -11,11 +11,11 @@ const Home = () => {
 
   const nameArray = ['u', 's', 's', 'e', 'i', 'n']
   const jobArray = [
-    'w',
+    'W',
     'e',
     'b',
     ' ',
-    'd',
+    'D',
     'e',
     'v',
     'e',
@@ -56,10 +56,15 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <h2>FrontEnd | Backend Developer</h2>
+          <div className="buttons">
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+            <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download className="flat-button">
+              DOWNLOAD RESUME
+            </a>
+          </div>
         </div>
         <Logo />
       </div>

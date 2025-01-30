@@ -12,7 +12,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 
-const About = () => {
+const AboutFrontend = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
@@ -28,22 +28,41 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={[
+                'A',
+                'b',
+                'o',
+                'u',
+                't',
+                ' ',
+                'F',
+                'r',
+                'o',
+                'n',
+                't',
+                'E',
+                'n',
+                'd',
+              ]}
               idx={15}
             />
           </h1>
           <p>
-            I am a highly ambitious front-end developer seeking a role in a
-            dynamic company that offers opportunities to work with the latest
-            technologies and engage in diverse projects. With a strong
-            foundation in front-end development, I am eager to contribute to
-            impactful applications.
+            A passionate frontend developer skilled in React.js and Tailwind
+            CSS, with advanced knowledge of JavaScript. I am driven by the
+            thrill of solving problems and the endless potential to enhance and
+            evolve websites.
           </p>
           <p align="LEFT">
-            I am confident in my abilities, naturally curious, and constantly
-            honing my problem-solving skills and critical thinking skills. My
-            passion for technology drives me to stay updated with industry
-            trends and continuously improve my craft.
+            My strength lies in my determination to learn and adapt; even if I
+            don’t know the solution to a problem right now, I’ll always find a
+            way to learn and solve it. I live by the belief: "True ignorance
+            lies in thinking you already know everything—growth begins with
+            curiosity and humility." I’m constantly striving to learn, improve,
+            and build exceptional web experiences. Even my prior experience with
+            Python’s Tkinter library for GUI development, which I once thought
+            would go to waste, ended up reinforcing my understanding of
+            structuring user interfaces.
           </p>
           <p style={{ color: '#efd81d', fontSize: '18px' }}>
             Personal Information
@@ -83,4 +102,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutFrontend
