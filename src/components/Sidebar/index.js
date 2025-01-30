@@ -16,9 +16,9 @@ import { Link, NavLink } from 'react-router-dom'
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false)
   const [showAboutOptions, setShowAbout] = useState(false)
-  const sidebarRef = useRef(null) // Reference to the sidebar
+  const sidebarRef = useRef(null)
 
-  // Close the sidebar when clicking outside of it
+  // Close the aboutOptions menu when clicking outside of it
   const handleClickOutside = (event) => {
     if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
       setShowAbout(false) // Close sidebar

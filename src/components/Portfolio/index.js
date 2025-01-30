@@ -42,9 +42,9 @@ const Portfolio = () => {
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
+        <SiMongodb key="mongoDb" color="#4DB33D" />,
         <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
-        <SiExpress key="express" color="#000000" />,
-        <SiMongodb key="mongodb" color="#4DB33D" />,
+        <SiExpress key="express" color="#ffff" />,
       ]
     },
     {

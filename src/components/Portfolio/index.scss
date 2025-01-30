@@ -36,10 +36,16 @@
 
         .tools {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             font-size: 3rem;
+            padding: 5px;
             background-color: #000;
+
+            span {
+                display: flex;
+                align-items: center;
+            }
         }
 
         .image-box {
