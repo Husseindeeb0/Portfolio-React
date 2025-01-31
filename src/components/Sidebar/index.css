@@ -156,49 +156,48 @@
 .nav-bar .close-icon {
   display: none;
 }
+
 @media screen and (max-width: 800px) {
-  .nav-bar .nav-bar {
+  .nav-bar {
     background: transparent;
     position: initial;
     height: auto;
     min-height: auto;
   }
-  .nav-bar .nav-bar ul,
-  .nav-bar .nav-bar nav {
+  .nav-bar ul,
+  .nav-bar nav {
     display: none;
   }
-  .nav-bar .nav-bar nav {
+  .nav-bar nav {
     width: 100%;
-    top: 0;
-    left: 0;
-    background: #181818;
+    background: rgba(0, 0, 0, 0.9);
     height: 100%;
     margin: 0;
-    z-index: 2;
+    z-index: 1000;
     position: fixed;
   }
-  .nav-bar .nav-bar nav.mobile-show {
+  .nav-bar nav.mobile-show {
     display: block;
   }
-  .nav-bar .nav-bar nav a,
-  .nav-bar .nav-bar nav .about-link {
+  .nav-bar nav a,
+  .nav-bar nav .about-link {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .nav-bar .nav-bar nav a:after,
-  .nav-bar .nav-bar nav .about-link:after {
+  .nav-bar nav a:after,
+  .nav-bar nav .about-link:after {
     opacity: 1;
     position: initial;
     width: auto;
     margin-left: 10px;
   }
-  .nav-bar .nav-bar nav a svg,
-  .nav-bar .nav-bar nav .about-link svg {
+  .nav-bar nav a svg,
+  .nav-bar nav .about-link svg {
     opacity: 1 !important;
   }
-  .nav-bar .nav-bar .hamburger-icon,
-  .nav-bar .nav-bar .close-icon {
+  .nav-bar .hamburger-icon,
+  .nav-bar .close-icon {
     position: absolute;
     top: 15px;
     right: 15px;
