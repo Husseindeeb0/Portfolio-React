@@ -205,7 +205,7 @@
 
     nav {
       width: 100%;
-      background: rgba(0, 0, 0, 0.9);
+      background: rgba(0, 0, 0, 1);
       height: 100%;
       margin: 0;
       z-index: 1000;
@@ -233,6 +233,24 @@
       a svg,
       .about-link svg {
         opacity: 1 !important;
+      }
+
+      .about-option {
+        display: flex;
+        gap: 7px;
+        font-size: 20px;
+
+        span {
+          font-size: 9px;
+          font-weight: lighter;
+          letter-spacing: 2px;
+          color: #4d4d4e;
+          transition: all 0.3s ease-out;
+
+          &:hover {
+            color: #ffd700;
+          }
+        }
       }
     }
 

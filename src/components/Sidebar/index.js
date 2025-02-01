@@ -48,14 +48,8 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <div
-          className={`about-link ${showAboutOptions ? 'active' : ''}`}
-          onClick={() => setShowAbout((prev) => !prev)}
-        >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </div>
-        {showAboutOptions && (
-          <div className="about-options" ref={sidebarRef}>
+        {showNav ? (
+          <div>
             <NavLink
               activeclassname=""
               className="about-option"
@@ -65,7 +59,8 @@ const Sidebar = () => {
                 setShowNav(false)
               }}
             >
-              About Frontend
+              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+              <span>ABOUT FRONTEND</span>
             </NavLink>
             <NavLink
               activeclassname=""
@@ -76,9 +71,45 @@ const Sidebar = () => {
                 setShowNav(false)
               }}
             >
-              About Backend
+              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+              <span>ABOUT BACKEND</span>
             </NavLink>
           </div>
+        ) : (
+          <>
+            <div
+              className={`about-link ${showAboutOptions ? 'active' : ''}`}
+              onClick={() => setShowAbout((prev) => !prev)}
+            >
+              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+            </div>
+            {showAboutOptions && (
+              <div className="about-options" ref={sidebarRef}>
+                <NavLink
+                  activeclassname=""
+                  className="about-option"
+                  to="/aboutFrontend"
+                  onClick={() => {
+                    setShowAbout(false)
+                    setShowNav(false)
+                  }}
+                >
+                  About Frontend
+                </NavLink>
+                <NavLink
+                  activeclassname=""
+                  className="about-option"
+                  to="/aboutBackend"
+                  onClick={() => {
+                    setShowAbout(false)
+                    setShowNav(false)
+                  }}
+                >
+                  About Backend
+                </NavLink>
+              </div>
+            )}
+          </>
         )}
         <NavLink
           activeclassname="active"
