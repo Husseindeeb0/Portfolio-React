@@ -61,7 +61,7 @@ const Home = () => {
             <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>
-            <a href={`${process.env.PUBLIC_URL}/resume.pdf`} download className="flat-button">
+            <a href={`${process.env.PUBLIC_URL}/hussein_deeb_resume.pdf`} download className="flat-button">
               DOWNLOAD RESUME
             </a>
           </div>
