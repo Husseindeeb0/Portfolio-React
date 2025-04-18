@@ -8,9 +8,8 @@ import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faNodeJs } from '@fo
 import image_1 from '../../assets/images/facebook.png'
 import image_2 from '../../assets/images/recipe.jpg'
 import image_3 from '../../assets/images/weather.jpg'
-import image_4 from '../../assets/images/test.png'
-import image_5 from '../../assets/images/test_generator.png'
-import image_6 from '../../assets/images/freelancehub.png'
+import image_4 from '../../assets/images/test_generator.png'
+import image_5 from '../../assets/images/freelancehub.png'
 import './index.scss'
 
 const Portfolio = () => {
@@ -18,9 +17,9 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      image: image_6,
+      image: image_5,
       title: 'FreelanceHub',
-      githubLink: 'https://github.com/Kiritsu0/FreelanceHub',
+      githubLink: 'https://github.com/husseindeeb0/FreelanceHub',
       liveLink: 'https://freelancehub0.netlify.app/',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
@@ -32,9 +31,9 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: image_5,
+      image: image_4,
       title: 'Test Generator',
-      githubLink: 'https://github.com/Kiritsu0/Test-Generator',
+      githubLink: 'https://github.com/husseindeeb0/Test-Generator',
       liveLink: 'https://test-generator-frontend.onrender.com',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
@@ -51,7 +50,7 @@ const Portfolio = () => {
       id: 3,
       image: image_2,
       title: 'Food Recipe',
-      githubLink: 'https://github.com/Kiritsu0/Food-Recipe-React',
+      githubLink: 'https://github.com/husseindeeb0/Food-Recipe-React',
       liveLink: 'https://kiritsu0.github.io/Food-Recipe-React/',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
@@ -65,7 +64,7 @@ const Portfolio = () => {
       id: 4,
       image: image_1,
       title: 'Facebook Clone',
-      githubLink: 'https://github.com/Kiritsu0/Facebook-Clone',
+      githubLink: 'https://github.com/husseindeeb0/Facebook-Clone',
       liveLink: 'https://social-clone0.netlify.app/',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
@@ -79,8 +78,8 @@ const Portfolio = () => {
       id: 5,
       image: image_3,
       title: 'Weather App',
-      githubLink: 'https://github.com/Kiritsu0/React-Weather-App',
-      liveLink: 'https://kiritsu0.github.io/React-Weather-App/',
+      githubLink: 'https://github.com/husseindeeb0/React-Weather-App',
+      liveLink: 'https://husseindeeb0.github.io/React-Weather-App/',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
@@ -93,8 +92,8 @@ const Portfolio = () => {
       id: 6,
       image: image_4,
       title: 'Test Page',
-      githubLink: 'https://github.com/Kiritsu0/React-Quiz-App',
-      liveLink: 'https://kiritsu0.github.io/React-Quiz-App/',
+      githubLink: 'https://github.com/husseindeeb0/React-Quiz-App',
+      liveLink: 'https://husseindeeb0.github.io/React-Quiz-App/',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
