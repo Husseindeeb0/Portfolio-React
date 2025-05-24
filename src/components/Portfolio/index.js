@@ -10,6 +10,7 @@ import image_2 from '../../assets/images/recipe.jpg'
 import image_3 from '../../assets/images/weather.jpg'
 import image_4 from '../../assets/images/test_generator.png'
 import image_5 from '../../assets/images/freelancehub.png'
+import image_6 from '../../assets/images/bitwiseclub.png'
 import './index.scss'
 
 const Portfolio = () => {
@@ -17,16 +18,19 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      image: image_5,
-      title: 'FreelanceHub',
-      githubLink: 'https://github.com/husseindeeb0/FreelanceHub',
-      liveLink: 'https://freelancehub0.netlify.app/',
+      image: image_6,
+      title: 'BitwiseClub',
+      githubLink: 'https://github.com/husseindeeb0/Bitwise',
+      liveLink: 'https://bitwiseclub.com',
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
+        <SiMongodb key="mongoDb" color="#4DB33D" />,
+        <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
+        <SiExpress key="express" color="#ffff" />,
       ]
     },
     {
@@ -48,6 +52,20 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      image: image_5,
+      title: 'FreelanceHub',
+      githubLink: 'https://github.com/husseindeeb0/FreelanceHub',
+      liveLink: 'https://freelancehub0.netlify.app/',
+      tools: [
+        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
+        <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
+        <SiTailwindcss key="tailwind" color="#38b2ac" />,
+        <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
+        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
+      ]
+    },
+    {
+      id: 4,
       image: image_2,
       title: 'Food Recipe',
       githubLink: 'https://github.com/husseindeeb0/Food-Recipe-React',
@@ -61,7 +79,7 @@ const Portfolio = () => {
       ]
     },
     {
-      id: 4,
+      id: 5,
       image: image_1,
       title: 'Facebook Clone',
       githubLink: 'https://github.com/husseindeeb0/Facebook-Clone',
@@ -75,7 +93,7 @@ const Portfolio = () => {
       ]
     },
     {
-      id: 5,
+      id: 6,
       image: image_3,
       title: 'Weather App',
       githubLink: 'https://github.com/husseindeeb0/React-Weather-App',
@@ -83,25 +101,10 @@ const Portfolio = () => {
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
-        <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
       ]
     },
-    {
-      id: 6,
-      image: image_4,
-      title: 'Test Page',
-      githubLink: 'https://github.com/husseindeeb0/React-Quiz-App',
-      liveLink: 'https://husseindeeb0.github.io/React-Quiz-App/',
-      tools: [
-        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
-        <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
-        <SiTailwindcss key="tailwind" color="#38b2ac" />,
-        <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
-        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ]
-    }
   ];
 
   useEffect(() => {

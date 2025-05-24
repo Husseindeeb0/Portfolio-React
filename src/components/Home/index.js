@@ -62,7 +62,7 @@ const Home = () => {
               CONTACT ME
             </Link>
             <a href={`${process.env.PUBLIC_URL}/hussein_deeb_resume.pdf`} download className="flat-button">
-              DOWNLOAD RESUME
+              DOWNLOAD FULL RESUME
             </a>
           </div>
         </div>
