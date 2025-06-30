@@ -1,11 +1,11 @@
-import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import AboutFrontend from './components/About_Frontend'
-import AboutBackend from './components/About_Backend'
-import Contact from './components/Contact'
-import Layout from './components/Layout'
-import Portfolio from './components/Portfolio'
-import './App.scss'
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import AboutFrontend from "./pages/About_Frontend";
+import AboutBackend from "./pages/About_Backend";
+import Contact from "./pages/Contact";
+import Layout from "./components/Layout";
+import Portfolio from "./pages/Portfolio";
+import "./App.scss";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         </Route>
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

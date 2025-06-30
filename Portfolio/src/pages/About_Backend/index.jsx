@@ -4,8 +4,7 @@ import {
   faNode,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import './index.scss'
 
 const AboutBackend = () => {
@@ -92,7 +91,7 @@ const AboutBackend = () => {
               <SiMongodb />
             </div>
             <div className="side4">
-              <img src={"/jwt.svg"} alt="JWT Logo" />
+              <img src={"jwt.svg"} alt="JWT Logo" />
             </div>
           </div>
         </div>

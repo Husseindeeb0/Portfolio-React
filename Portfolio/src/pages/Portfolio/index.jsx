@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+import { useEffect, useState } from 'react'
 import { SiExpress, SiMongodb, SiTailwindcss } from 'react-icons/si'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 
-import image_1 from '../../assets/images/facebook.png'
-import image_2 from '../../assets/images/recipe.jpg'
-import image_3 from '../../assets/images/weather.jpg'
-import image_4 from '../../assets/images/test_generator.png'
-import image_5 from '../../assets/images/freelancehub.png'
-import image_6 from '../../assets/images/bitwiseclub.png'
+import image_1 from '/assets/images/facebook.png'
+import image_2 from '/assets/images/recipe.jpg'
+import image_3 from '/assets/images/weather.jpg'
+import image_4 from '/assets/images/test_generator.png'
+import image_5 from '/assets/images/freelancehub.png'
+import image_6 from '/assets/images/bitwiseclub.png'
 import './index.scss'
 
 const Portfolio = () => {

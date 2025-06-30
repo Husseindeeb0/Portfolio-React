@@ -1,39 +1,38 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/letter-H.png'
-import Logo from './Logo'
-import './index.scss'
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import AnimatedLetters from "../../components/AnimatedLetters";
+import LogoTitle from "/assets/images/letter-H.png";
+import Logo from "./Logo";
+import "./index.scss";
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = ['u', 's', 's', 'e', 'i', 'n']
+  const nameArray = ["u", "s", "s", "e", "i", "n"];
   const jobArray = [
-    'W',
-    'e',
-    'b',
-    ' ',
-    'D',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+    "W",
+    "e",
+    "b",
+    " ",
+    "D",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+    ".",
+  ];
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
+      setLetterClass("text-animate-hover");
+    }, 4000);
 
-    return () => clearTimeout(timeOut)
-  }, [])
+    return () => clearTimeout(timeOut);
+  }, []);
 
   return (
     <>
@@ -63,7 +62,7 @@ const Home = () => {
             <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>
-            <a 
+            <a
               href="https://drive.google.com/uc?export=download&id=1y0UTb1uefoPUYyyNe9uVk6jxG_DoTujx"
               className="flat-button"
             >
@@ -74,7 +73,7 @@ const Home = () => {
         <Logo />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
