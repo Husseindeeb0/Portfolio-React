@@ -1,26 +1,41 @@
-import { useEffect, useState } from 'react'
-import { SiExpress, SiMongodb, SiTailwindcss } from 'react-icons/si'
-import AnimatedLetters from '../../components/AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { useEffect, useState } from "react";
+import {
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiSocketdotio,
+  SiTypescript,
+  SiDaisyui,
+} from "react-icons/si";
+import AnimatedLetters from "../../components/AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faReact,
+  faNodeJs,
+} from "@fortawesome/free-brands-svg-icons";
 
-import image_1 from '/assets/images/facebook.png'
-import image_2 from '/assets/images/recipe.jpg'
-import image_3 from '/assets/images/weather.jpg'
-import image_4 from '/assets/images/test_generator.png'
-import image_5 from '/assets/images/freelancehub.png'
-import image_6 from '/assets/images/bitwiseclub.png'
-import './index.scss'
+import image_1 from "/assets/images/facebook.png";
+import image_2 from "/assets/images/recipe.jpg";
+import image_3 from "/assets/images/weather.jpg";
+import image_4 from "/assets/images/test_generator.png";
+import image_5 from "/assets/images/freelancehub.png";
+import image_6 from "/assets/images/bitwiseclub.png";
+import image_7 from "/assets/images/litechat.png";
+import "./index.scss";
 
 const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
   const projects = [
     {
       id: 1,
       image: image_6,
-      title: 'BitwiseClub',
-      githubLink: 'https://github.com/husseindeeb0/Bitwise',
-      liveLink: 'https://bitwiseclub.com',
+      title: "BitwiseClub",
+      githubLink: "https://github.com/husseindeeb0/Bitwise",
+      liveLink: "https://bitwiseclub.com",
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
@@ -30,14 +45,31 @@ const Portfolio = () => {
         <SiMongodb key="mongoDb" color="#4DB33D" />,
         <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
         <SiExpress key="express" color="#ffff" />,
-      ]
+      ],
     },
     {
       id: 2,
+      image: image_7,
+      title: "LiteChat",
+      githubLink: "https://github.com/Husseindeeb0/LiteChat",
+      liveLink: "https://litechats.netlify.app",
+      tools: [
+        <SiTailwindcss key="tailwind" color="#38b2ac" />,
+        <SiDaisyui key="daisyui" color="#1ad1a5" />,
+        <SiSocketdotio key="socketio" color="#444444" />,
+        <SiTypescript key="typescript" color="#3178C6" />,
+        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
+        <SiMongodb key="mongoDb" color="#4DB33D" />,
+        <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
+        <SiExpress key="express" color="#ffff" />,
+      ],
+    },
+    {
+      id: 3,
       image: image_4,
-      title: 'Test Generator',
-      githubLink: 'https://github.com/husseindeeb0/Test-Generator',
-      liveLink: 'https://test-generator-frontend.onrender.com',
+      title: "Test Generator",
+      githubLink: "https://github.com/husseindeeb0/Test-Generator",
+      liveLink: "https://test-generator-frontend.onrender.com",
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
@@ -47,74 +79,74 @@ const Portfolio = () => {
         <SiMongodb key="mongoDb" color="#4DB33D" />,
         <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
         <SiExpress key="express" color="#ffff" />,
-      ]
-    },
-    {
-      id: 3,
-      image: image_5,
-      title: 'FreelanceHub',
-      githubLink: 'https://github.com/husseindeeb0/FreelanceHub',
-      liveLink: 'https://freelancehub0.netlify.app/',
-      tools: [
-        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
-        <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
-        <SiTailwindcss key="tailwind" color="#38b2ac" />,
-        <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
-        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ]
+      ],
     },
     {
       id: 4,
-      image: image_2,
-      title: 'Food Recipe',
-      githubLink: 'https://github.com/husseindeeb0/Food-Recipe-React',
-      liveLink: 'https://kiritsu0.github.io/Food-Recipe-React/',
+      image: image_5,
+      title: "FreelanceHub",
+      githubLink: "https://github.com/husseindeeb0/FreelanceHub",
+      liveLink: "https://freelancehub0.netlify.app/",
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ]
+      ],
     },
     {
       id: 5,
-      image: image_1,
-      title: 'Facebook Clone',
-      githubLink: 'https://github.com/husseindeeb0/Facebook-Clone',
-      liveLink: 'https://social-clone0.netlify.app/',
+      image: image_2,
+      title: "Food Recipe",
+      githubLink: "https://github.com/husseindeeb0/Food-Recipe-React",
+      liveLink: "https://kiritsu0.github.io/Food-Recipe-React/",
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ]
+      ],
     },
     {
       id: 6,
+      image: image_1,
+      title: "Facebook Clone",
+      githubLink: "https://github.com/husseindeeb0/Facebook-Clone",
+      liveLink: "https://social-clone0.netlify.app/",
+      tools: [
+        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
+        <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
+        <SiTailwindcss key="tailwind" color="#38b2ac" />,
+        <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
+        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
+      ],
+    },
+    {
+      id: 7,
       image: image_3,
-      title: 'Weather App',
-      githubLink: 'https://github.com/husseindeeb0/React-Weather-App',
-      liveLink: 'https://husseindeeb0.github.io/React-Weather-App/',
+      title: "Weather App",
+      githubLink: "https://github.com/husseindeeb0/React-Weather-App",
+      liveLink: "https://husseindeeb0.github.io/React-Weather-App/",
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ]
+      ],
     },
   ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
+      setLetterClass("text-animate-hover");
+    }, 3000);
 
     return () => {
-      clearTimeout(timer)
-    }
-  })
+      clearTimeout(timer);
+    };
+  });
 
   return (
     <>
@@ -122,7 +154,7 @@ const Portfolio = () => {
         <h1 className="page-title">
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={'Portfolio'.split('')}
+            strArray={"Portfolio".split("")}
             idx={15}
           />
         </h1>
@@ -135,7 +167,7 @@ const Portfolio = () => {
               <div className="project-title">
                 <p>{project.title}</p>
               </div>
-              <div className='tools'>
+              <div className="tools">
                 {project.tools.map((tool, index) => (
                   <span key={index}>{tool}</span>
                 ))}
@@ -158,7 +190,7 @@ const Portfolio = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

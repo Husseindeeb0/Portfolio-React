@@ -1,28 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import {
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import { SiTailwindcss } from 'react-icons/si'
-import AnimatedLetters from '../../components/AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
+} from "@fortawesome/free-brands-svg-icons";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import AnimatedLetters from "../../components/AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.scss";
 
 const AboutFrontend = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
+      setLetterClass("text-animate-hover");
+    }, 3000);
 
     return () => {
       clearTimeout(timeout);
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <>
@@ -32,20 +32,20 @@ const AboutFrontend = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={[
-                'A',
-                'b',
-                'o',
-                'u',
-                't',
-                ' ',
-                'F',
-                'r',
-                'o',
-                'n',
-                't',
-                'E',
-                'n',
-                'd',
+                "A",
+                "b",
+                "o",
+                "u",
+                "t",
+                " ",
+                "F",
+                "r",
+                "o",
+                "n",
+                "t",
+                "E",
+                "n",
+                "d",
               ]}
               idx={15}
             />
@@ -67,7 +67,7 @@ const AboutFrontend = () => {
             would go to waste, ended up reinforcing my understanding of
             structuring user interfaces.
           </p>
-          <p style={{ color: '#efd81d', fontSize: '18px' }}>
+          <p style={{ color: "#efd81d", fontSize: "18px" }}>
             Personal Information
           </p>
           <p>
@@ -95,13 +95,13 @@ const AboutFrontend = () => {
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <SiTypescript />
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutFrontend
+export default AboutFrontend;
