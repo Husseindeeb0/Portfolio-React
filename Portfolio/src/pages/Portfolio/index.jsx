@@ -52,7 +52,7 @@ const Portfolio = () => {
       image: image_7,
       title: "LiteChat",
       githubLink: "https://github.com/Husseindeeb0/LiteChat",
-      liveLink: "https://litechats.netlify.app",
+      liveLink: "https://litechat-70j2.onrender.com",
       tools: [
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <SiDaisyui key="daisyui" color="#1ad1a5" />,
