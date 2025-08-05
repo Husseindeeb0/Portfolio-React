@@ -100,7 +100,7 @@ const Portfolio = () => {
       image: image_2,
       title: "Food Recipe",
       githubLink: "https://github.com/husseindeeb0/Food-Recipe-React",
-      liveLink: "https://kiritsu0.github.io/Food-Recipe-React/",
+      liveLink: "https://husseindeeb0.github.io/Food-Recipe-React/",
       tools: [
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
