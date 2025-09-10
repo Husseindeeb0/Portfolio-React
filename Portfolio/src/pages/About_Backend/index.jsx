@@ -68,15 +68,6 @@ const AboutBackend = () => {
             every backend challenge with curiosity and a drive to improve,
             constantly refining my skills to build robust web applications.
           </p>
-
-          <p style={{ color: '#efd81d', fontSize: '18px' }}>
-            Personal Information
-          </p>
-          <p>
-            <u>Birth Date:</u> 2006-02-27 <br />
-            <u>Address:</u> Lebanon <br />
-            <u>Number:</u> +961 70 063 612
-          </p>
         </div>
 
         <div className="stage-circular-mot">

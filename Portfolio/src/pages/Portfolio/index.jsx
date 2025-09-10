@@ -25,6 +25,7 @@ import image_4 from "/assets/images/test_generator.png";
 import image_5 from "/assets/images/freelancehub.png";
 import image_6 from "/assets/images/bitwiseclub.png";
 import image_7 from "/assets/images/litechat.png";
+import image_8 from "/assets/images/shirtmod3d.png";
 import "./index.scss";
 
 const Portfolio = () => {
@@ -83,6 +84,22 @@ const Portfolio = () => {
     },
     {
       id: 4,
+      image: image_8,
+      title: "ShirtMod3D",
+      githubLink: "https://github.com/husseindeeb0/ShirtMod3D",
+      liveLink: "https://shirtmod3d-frontend.onrender.com",
+      tools: [
+        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
+        <SiTailwindcss key="tailwind" color="#38b2ac" />,
+        <SiTypescript key="typescript" color="#3178C6" />,
+        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
+        <img src="threejs.png" alt="threejs Logo" style={{width: "30px"}} />,
+        <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
+        <SiExpress key="express" color="#ffff" />,
+      ],
+    },
+    {
+      id: 5,
       image: image_5,
       title: "FreelanceHub",
       githubLink: "https://github.com/husseindeeb0/FreelanceHub",
@@ -96,7 +113,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       image: image_2,
       title: "Food Recipe",
       githubLink: "https://github.com/husseindeeb0/Food-Recipe-React",
@@ -110,7 +127,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       image: image_1,
       title: "Facebook Clone",
       githubLink: "https://github.com/husseindeeb0/Facebook-Clone",
@@ -124,7 +141,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 7,
+      id: 8,
       image: image_3,
       title: "Weather App",
       githubLink: "https://github.com/husseindeeb0/React-Weather-App",
