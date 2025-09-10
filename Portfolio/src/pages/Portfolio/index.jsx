@@ -20,7 +20,6 @@ import {
 
 import image_1 from "/assets/images/facebook.png";
 import image_2 from "/assets/images/recipe.jpg";
-import image_3 from "/assets/images/weather.jpg";
 import image_4 from "/assets/images/test_generator.png";
 import image_5 from "/assets/images/freelancehub.png";
 import image_6 from "/assets/images/bitwiseclub.png";
@@ -93,7 +92,7 @@ const Portfolio = () => {
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
         <SiTypescript key="typescript" color="#3178C6" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-        <img src="threejs.png" alt="threejs Logo" style={{width: "30px"}} />,
+        <img src="threejs.png" alt="threejs Logo" style={{ width: "30px" }} />,
         <FontAwesomeIcon icon={faNodeJs} key="node" color="#8cc84b" />,
         <SiExpress key="express" color="#ffff" />,
       ],
@@ -136,19 +135,6 @@ const Portfolio = () => {
         <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
         <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
         <SiTailwindcss key="tailwind" color="#38b2ac" />,
-        <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
-        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ],
-    },
-    {
-      id: 8,
-      image: image_3,
-      title: "Weather App",
-      githubLink: "https://github.com/husseindeeb0/React-Weather-App",
-      liveLink: "https://husseindeeb0.github.io/React-Weather-App/",
-      tools: [
-        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
-        <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
         <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
         <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
       ],
