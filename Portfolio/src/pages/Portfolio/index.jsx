@@ -21,10 +21,9 @@ import {
 import image_1 from "/assets/images/facebook.png";
 import image_2 from "/assets/images/recipe.jpg";
 import image_4 from "/assets/images/test_generator.png";
-import image_5 from "/assets/images/freelancehub.png";
 import image_6 from "/assets/images/bitwiseclub.png";
-import image_7 from "/assets/images/litechat.png";
-import image_8 from "/assets/images/shirtmod3d.png";
+import image_5 from "/assets/images/litechat.png";
+import image_3 from "/assets/images/shirtmod3d.png";
 import "./index.scss";
 
 const Portfolio = () => {
@@ -49,7 +48,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: image_7,
+      image: image_5,
       title: "LiteChat",
       githubLink: "https://github.com/Husseindeeb0/LiteChat",
       liveLink: "https://litechat-70j2.onrender.com",
@@ -83,7 +82,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: image_8,
+      image: image_3,
       title: "ShirtMod3D",
       githubLink: "https://github.com/husseindeeb0/ShirtMod3D",
       liveLink: "https://shirtmod3d-frontend.onrender.com",
@@ -99,20 +98,6 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      image: image_5,
-      title: "FreelanceHub",
-      githubLink: "https://github.com/husseindeeb0/FreelanceHub",
-      liveLink: "https://freelancehub0.netlify.app/",
-      tools: [
-        <FontAwesomeIcon icon={faHtml5} key="html" color="#e34c26" />,
-        <FontAwesomeIcon icon={faCss3Alt} key="css" color="#1572b6" />,
-        <SiTailwindcss key="tailwind" color="#38b2ac" />,
-        <FontAwesomeIcon icon={faJsSquare} key="js" color="#f7df1e" />,
-        <FontAwesomeIcon icon={faReact} key="react" color="#61dafb" />,
-      ],
-    },
-    {
-      id: 6,
       image: image_2,
       title: "Food Recipe",
       githubLink: "https://github.com/husseindeeb0/Food-Recipe-React",
@@ -126,7 +111,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 7,
+      id: 6,
       image: image_1,
       title: "Facebook Clone",
       githubLink: "https://github.com/husseindeeb0/Facebook-Clone",
