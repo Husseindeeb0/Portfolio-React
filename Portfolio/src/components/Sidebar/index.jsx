@@ -1,5 +1,5 @@
 import './index.scss'
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import LogoS from '/assets/images/coding-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -14,31 +14,7 @@ import {
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false) // used for hiding and displaying nav depending on screen size
-  const [showAboutOptions, setShowAbout] = useState(false) // For showing about options
-  const sidebarRef = useRef(null)
-
-  // Close the aboutOptions menu when clicking outside of it
-  const handleClickOutside = (event) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-      setShowAbout(false) // Close sidebar
-    }
-  }
-
-useEffect(() => {
-  let timeoutId;
-
-  if (showAboutOptions === true) {
-    timeoutId = setTimeout(() => {
-      document.addEventListener('click', handleClickOutside)
-    }, 0)
-  }
-
-  return () => {
-    clearTimeout(timeoutId)
-    document.removeEventListener('click', handleClickOutside)
-  }
-}, [showAboutOptions])
+  const [showNav, setShowNav] = useState(false)
 
   return (
     <div className="nav-bar">
@@ -54,69 +30,14 @@ useEffect(() => {
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        {showNav ? (
-          <div>
-            <NavLink
-              activeclassname=""
-              className="about-option"
-              to="/aboutFrontend"
-              onClick={() => {
-                setShowAbout(false)
-                setShowNav(false)
-              }}
-            >
-              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-              <span>ABOUT FRONTEND</span>
-            </NavLink>
-            <NavLink
-              activeclassname=""
-              className="about-option"
-              to="/aboutBackend"
-              onClick={() => {
-                setShowAbout(false)
-                setShowNav(false)
-              }}
-            >
-              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-              <span>ABOUT BACKEND</span>
-            </NavLink>
-          </div>
-        ) : (
-          <>
-            <div
-              className={`about-link ${showAboutOptions ? 'active' : ''}`}
-              onClick={() => setShowAbout((prev) => !prev)}
-            >
-              <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-            </div>
-            {showAboutOptions && (
-              <div className="about-options" ref={sidebarRef} >
-                <NavLink
-                  activeclassname=""
-                  className="about-option"
-                  to="/aboutFrontend"
-                  onClick={() => {
-                    setShowAbout(false)
-                    setShowNav(false)
-                  }}
-                >
-                  About Frontend
-                </NavLink>
-                <NavLink
-                  activeclassname=""
-                  className="about-option"
-                  to="/aboutBackend"
-                  onClick={() => {
-                    setShowAbout(false)
-                    setShowNav(false)
-                  }}
-                >
-                  About Backend
-                </NavLink>
-              </div>
-            )}
-          </>
-        )}
+        <NavLink
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
         <NavLink
           activeclassname="active"
           className="portfolio-link"
