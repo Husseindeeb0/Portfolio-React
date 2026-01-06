@@ -31,7 +31,6 @@ import image_6 from "/assets/images/bitwiseclub.png";
 import image_5 from "/assets/images/litechat.png";
 import image_3 from "/assets/images/shirtmod3d.png";
 import image_7 from "/assets/images/aidea-home.png";
-import image_8 from "/assets/images/econet_preview.png";
 import image_2 from "/assets/images/econet.png"
 import "./index.scss";
 
