@@ -31,7 +31,7 @@ import image_6 from "/assets/images/bitwiseclub.png";
 import image_5 from "/assets/images/litechat.png";
 import image_3 from "/assets/images/shirtmod3d.png";
 import image_7 from "/assets/images/aidea-home.png";
-import image_2 from "/assets/images/econet.png"
+import image_2 from "/assets/images/econet.png";
 import "./index.scss";
 
 const ProjectCard = ({ project, onOpenModal }) => {
@@ -171,9 +171,8 @@ const Portfolio = () => {
       ],
       problemSolved:
         "Traditional event platforms often lack real-time engagement and unified booking systems. ECoNet centralizes management and community interaction in one place.",
-      githubLink:
-        "https://github.com/husseindeeb0/Portfolio-React/tree/main/Portfolio",
-      liveLink: "https://econet-platform.com",
+      githubLink: "https://github.com/Husseindeeb0/ECoNet",
+      liveLink: "https://econet-pearl-alpha.vercel.app/",
       tools: [
         { icon: <SiNextdotjs color="#FFFFFF" />, name: "Next.js" },
         { icon: <SiTypescript color="#3178C6" />, name: "TypeScript" },
