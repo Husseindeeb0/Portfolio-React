@@ -7,6 +7,9 @@ import {
   SiTypescript,
   SiDaisyui,
   SiNextdotjs,
+  SiPrisma,
+  SiPostgresql,
+  SiDocker,
 } from "react-icons/si";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,6 +35,7 @@ import image_5 from "/assets/images/litechat.png";
 import image_3 from "/assets/images/shirtmod3d.png";
 import image_7 from "/assets/images/aidea-home.png";
 import image_2 from "/assets/images/econet.png";
+import image_8 from "/assets/images/transleb.png";
 import "./index.scss";
 
 const ProjectCard = ({ project, onOpenModal }) => {
@@ -153,6 +157,40 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
+    {
+      id: 9,
+      image: image_8,
+      title: "TransLeb",
+      description:
+        "TransLeb is a full-stack SaaS platform developed to improve public transportation management by connecting passengers with transportation providers. The platform includes authentication, an admin dashboard, and a PostgreSQL-powered backend to support efficient route optimization and management.",
+      features: [
+        "Interactive Admin Dashboard",
+        "Robust User Authentication",
+        "Highly Scalable Backend Architecture",
+        "Optimized Route Management",
+        "Modern & Responsive UX/UI Design",
+      ],
+      problemSolved:
+        "Inconvenient and uncoordinated public transport tracking by introducing a unified SaaS platform for real-time fleet coordination and passenger updates.",
+      githubLink: null,
+      liveLink: "https://transleb.vercel.app/",
+      tools: [
+        {
+          icon: <FontAwesomeIcon icon={faReact} color="#61dafb" />,
+          name: "React",
+        },
+        { icon: <SiTailwindcss color="#38b2ac" />, name: "Tailwind" },
+        { icon: <SiTypescript color="#3178C6" />, name: "TypeScript" },
+        {
+          icon: <FontAwesomeIcon icon={faNodeJs} color="#8cc84b" />,
+          name: "Node.js",
+        },
+        { icon: <SiExpress color="#ffff" />, name: "Express" },
+        { icon: <SiPostgresql color="#4169E1" />, name: "PostgreSQL" },
+        { icon: <SiPrisma color="#FFFFFF" />, name: "Prisma" },
+        { icon: <SiDocker color="#2496ED" />, name: "Docker" },
+      ],
+    },
     {
       id: 8,
       image: image_2,

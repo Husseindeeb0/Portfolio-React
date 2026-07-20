@@ -30,7 +30,10 @@ import {
   SiJsonwebtokens,
   SiDocker,
   SiThreedotjs,
+  SiPostgresql,
+  SiPrisma,
 } from "react-icons/si";
+import { TbBrandReactNative, TbSql } from "react-icons/tb";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import certificate1 from "/assets/images/techtalks_certificate.png";
@@ -57,6 +60,7 @@ const About = () => {
         icon: <FontAwesomeIcon icon={faReact} color="#61DAFB" />,
         name: "React",
       },
+      { icon: <TbBrandReactNative color="#61DAFB" />, name: "React Native" },
       { icon: <SiTypescript color="#3178C6" />, name: "TypeScript" },
       {
         icon: <FontAwesomeIcon icon={faJsSquare} color="#F7DF1E" />,
@@ -79,6 +83,9 @@ const About = () => {
       },
       { icon: <SiExpress color="#FFFFFF" />, name: "Express" },
       { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
+      { icon: <SiPostgresql color="#4169E1" />, name: "PostgreSQL" },
+      { icon: <TbSql color="#00758F" />, name: "SQL" },
+      { icon: <SiPrisma color="#FFFFFF" />, name: "Prisma" },
       { icon: <SiSocketdotio color="#FFFFFF" />, name: "Socket.io" },
       { icon: <SiJsonwebtokens color="#d63384" />, name: "JWT" },
     ],
