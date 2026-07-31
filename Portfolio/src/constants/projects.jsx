@@ -18,6 +18,7 @@ import {
   SiPostgresql,
   SiDocker,
   SiBootstrap,
+  SiPhp,
 } from "react-icons/si";
 
 import image_1 from "/assets/images/facebook.png";
@@ -29,6 +30,7 @@ import image_7 from "/assets/images/aidea-home.png";
 import image_2 from "/assets/images/econet.png";
 import image_8 from "/assets/images/transleb.png";
 import image_10 from "/assets/images/pulsetrack.png";
+import image_11 from "/assets/images/qr_digital_menu.png";
 
 export const projects = [
   {
@@ -175,6 +177,40 @@ export const projects = [
         name: "Node.js",
       },
       { icon: <SiExpress color="#ffff" />, name: "Express" },
+    ],
+  },
+  {
+    id: 12,
+    image: image_11,
+    title: "QR Digital Menu",
+    description:
+      "QR Digital Menu is a lightweight, web-based digital menu system designed specifically for contactless dining experiences. It includes a secure admin dashboard equipped with authentication and role-based authorization to manage menu categories and items (full CRUD), as well as generate and customize direct QR code links for instant customer scanning.",
+    features: [
+      "Secure Admin Dashboard with Auth & Authorization",
+      "Full Category & Menu Item Management (CRUD)",
+      "Dynamic & Editable QR Code Generation",
+      "Mobile-Optimized Contactless Digital View",
+      "Clean & Responsive Interface with Bootstrap",
+    ],
+    problemSolved:
+      "Replaces traditional paper menus with an easily updated digital solution that enables instant real-time menu modifications and direct QR code scanning.",
+    githubLink: "https://github.com/husseindeeb0/Qr_Digital_Menu",
+    liveLink: "https://qrdigitalmenu.free.nf",
+    tools: [
+      { icon: <SiPhp color="#777BB4" />, name: "PHP" },
+      { icon: <SiBootstrap color="#7952B3" />, name: "Bootstrap" },
+      {
+        icon: <FontAwesomeIcon icon={faHtml5} color="#e34c26" />,
+        name: "HTML5",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faCss3Alt} color="#1572b6" />,
+        name: "CSS3",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faJsSquare} color="#f7df1e" />,
+        name: "JavaScript",
+      },
     ],
   },
   {

@@ -25,6 +25,7 @@ import {
   SiThreedotjs,
   SiPostgresql,
   SiPrisma,
+  SiPhp,
 } from "react-icons/si";
 import { TbBrandReactNative, TbSql } from "react-icons/tb";
 
@@ -62,6 +63,7 @@ export const skills = {
       name: "Node.js",
     },
     { icon: <SiExpress color="#FFFFFF" />, name: "Express" },
+    { icon: <SiPhp color="#777BB4" />, name: "PHP" },
     { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
     { icon: <SiPostgresql color="#4169E1" />, name: "PostgreSQL" },
     { icon: <TbSql color="#00758F" />, name: "SQL" },
