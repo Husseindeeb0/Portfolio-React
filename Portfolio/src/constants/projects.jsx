@@ -22,11 +22,9 @@ import {
 } from "react-icons/si";
 
 import image_1 from "/assets/images/facebook.png";
-import image_4 from "/assets/images/test_generator.png";
 import image_6 from "/assets/images/bitwiseclub.png";
 import image_5 from "/assets/images/litechat.png";
 import image_3 from "/assets/images/shirtmod3d.png";
-import image_7 from "/assets/images/aidea-home.png";
 import image_2 from "/assets/images/econet.png";
 import image_8 from "/assets/images/transleb.png";
 import image_10 from "/assets/images/pulsetrack.png";
@@ -34,7 +32,7 @@ import image_11 from "/assets/images/qr_digital_menu.png";
 
 export const projects = [
   {
-    id: 10,
+    id: 1,
     image: image_10,
     title: "PulseTrack",
     description:
@@ -66,7 +64,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 2,
     image: image_8,
     title: "TransLeb",
     description:
@@ -100,7 +98,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 3,
     image: image_2,
     title: "ECoNet",
     description:
@@ -137,7 +135,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 4,
     image: image_6,
     title: "BitwiseClub",
     description:
@@ -180,7 +178,7 @@ export const projects = [
     ],
   },
   {
-    id: 12,
+    id: 5,
     image: image_11,
     title: "QR Digital Menu",
     description:
@@ -214,47 +212,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
-    image: image_7,
-    title: "Aidea",
-    description:
-      "Built Aidea a modern web platform that includes AI-powered tools by real-world applications. We developed a full admin panel for managing categories and user access requests, ensuring organized and secure control. I focused on the responsive front-end and modern UI/UX, delivering a clean, engaging experience across all devices and meeting the client’s vision with high-quality results.",
-    features: [
-      "AI-Powered Brainstorming Tools",
-      "Advanced Category Management",
-      "Secure Access Request System",
-      "Client-Focused Modern UI",
-      "Scalable Admin Dashboard",
-    ],
-    problemSolved:
-      "Overcoming writer's block and visualising complex project structures during the early stages of development.",
-    githubLink: null,
-    liveLink: "https://aidea-lb.com",
-    tools: [
-      {
-        icon: <FontAwesomeIcon icon={faHtml5} color="#e34c26" />,
-        name: "HTML5",
-      },
-      {
-        icon: <FontAwesomeIcon icon={faCss3Alt} color="#1572b6" />,
-        name: "CSS3",
-      },
-      { icon: <SiTailwindcss color="#38b2ac" />, name: "Tailwind" },
-      { icon: <SiTypescript color="#3178C6" />, name: "TypeScript" },
-      {
-        icon: <FontAwesomeIcon icon={faReact} color="#61dafb" />,
-        name: "React",
-      },
-      { icon: <SiMongodb color="#4DB33D" />, name: "MongoDB" },
-      {
-        icon: <FontAwesomeIcon icon={faNodeJs} color="#8cc84b" />,
-        name: "Node.js",
-      },
-      { icon: <SiExpress color="#ffff" />, name: "Express" },
-    ],
-  },
-  {
-    id: 3,
+    id: 6,
     image: image_5,
     title: "LiteChat",
     description:
@@ -288,50 +246,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
-    image: image_4,
-    title: "Test Generator",
-    description:
-      "TestGenerator is a full-stack MERN app for creating and managing custom tests. Users can register, log in, and build tests by selecting question count, difficulty, and topics. They can also write and save their own questions to a secure database. With a responsive design and intuitive interface, TestGenerator is ideal for education, training, or any assessment needs—offering full control over test creation from frontend to backend.",
-    features: [
-      "Automated Test Variation Engine",
-      "User-Generated Question Vault",
-      "Multi-Difficulty Scaling",
-      "Comprehensive Grading System",
-      "Interactive Performance Analytics",
-    ],
-    problemSolved:
-      "Manual grading and test creation are time-consuming for teachers. This tool automates the repetitive parts of educational assessment.",
-    githubLink: "https://github.com/husseindeeb0/Test-Generator",
-    liveLink: "https://test-generator-frontend.onrender.com",
-    tools: [
-      {
-        icon: <FontAwesomeIcon icon={faHtml5} color="#e34c26" />,
-        name: "HTML5",
-      },
-      {
-        icon: <FontAwesomeIcon icon={faCss3Alt} color="#1572b6" />,
-        name: "CSS3",
-      },
-      { icon: <SiTailwindcss color="#38b2ac" />, name: "Tailwind" },
-      {
-        icon: <FontAwesomeIcon icon={faJsSquare} color="#f7df1e" />,
-        name: "JavaScript",
-      },
-      {
-        icon: <FontAwesomeIcon icon={faReact} color="#61dafb" />,
-        name: "React",
-      },
-      { icon: <SiMongodb color="#4DB33D" />, name: "MongoDB" },
-      {
-        icon: <FontAwesomeIcon icon={faNodeJs} color="#8cc84b" />,
-        name: "Node.js",
-      },
-      { icon: <SiExpress color="#ffff" />, name: "Express" },
-    ],
-  },
-  {
-    id: 5,
+    id: 7,
     image: image_3,
     title: "ShirtMod3D",
     description:
@@ -376,17 +291,15 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     image: image_1,
     title: "Facebook Clone",
     description:
-      "Designed with a focus on replicating the Facebook experience, the clone features a fully responsive design, ensuring seamless functionality across all devices. Whether you’re testing social media features or exploring design patterns, this project provides a comprehensive look at how to build engaging and interactive interfaces.",
+      "What makes this project special is that I designed and built it entirely by myself long before the AI revolution. As a beginner developer, I crafted every component pixel-by-pixel, taking immense pride in tackling complex UI layouts and social media features completely on my own. Although it remains incomplete for now, it stands as a memorable milestone in my early growth as a developer.",
     features: [
       "Scalable News Feed Architecture",
       "Server-Side Rendering with Next.js",
-      "Complex State Management",
       "Responsive Social UI Patterns",
-      "Real-time Post Interactions",
     ],
     problemSolved:
       "Educational project to master complex state management and social graph data structures.",
