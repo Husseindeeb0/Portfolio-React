@@ -26,6 +26,10 @@ import {
   SiPostgresql,
   SiPrisma,
   SiPhp,
+  SiDotnet,
+  SiMysql,
+  SiMeta,
+  SiCloudflare,
 } from "react-icons/si";
 import { TbBrandReactNative, TbSql } from "react-icons/tb";
 
@@ -58,6 +62,7 @@ export const skills = {
     { icon: <SiThreedotjs color="#FFFFFF" />, name: "Three.js" },
   ],
   backend: [
+    { icon: <SiDotnet color="#512BD4" />, name: ".NET" },
     {
       icon: <FontAwesomeIcon icon={faNodeJs} color="#339933" />,
       name: "Node.js",
@@ -66,6 +71,7 @@ export const skills = {
     { icon: <SiPhp color="#777BB4" />, name: "PHP" },
     { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
     { icon: <SiPostgresql color="#4169E1" />, name: "PostgreSQL" },
+    { icon: <SiMysql color="#4479A1" />, name: "MySQL" },
     { icon: <TbSql color="#00758F" />, name: "SQL" },
     { icon: <SiPrisma color="#FFFFFF" />, name: "Prisma" },
     { icon: <SiSocketdotio color="#FFFFFF" />, name: "Socket.io" },
@@ -87,6 +93,8 @@ export const skills = {
       name: "Antigravity",
     },
     { icon: <SiDocker color="#2496ED" />, name: "Docker" },
+    { icon: <SiMeta color="#0866FF" />, name: "Meta" },
+    { icon: <SiCloudflare color="#F38020" />, name: "Cloudflare R2" },
   ],
 };
 

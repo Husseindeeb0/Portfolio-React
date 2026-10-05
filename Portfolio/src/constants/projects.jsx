@@ -19,6 +19,11 @@ import {
   SiDocker,
   SiBootstrap,
   SiPhp,
+  SiDotnet,
+  SiRedux,
+  SiMeta,
+  SiReact,
+  SiThreedotjs
 } from "react-icons/si";
 
 import image_1 from "/assets/images/facebook.png";
@@ -29,10 +34,71 @@ import image_2 from "/assets/images/econet.png";
 import image_8 from "/assets/images/transleb.png";
 import image_10 from "/assets/images/pulsetrack.png";
 import image_11 from "/assets/images/qr_digital_menu.png";
+import image_12 from "/assets/images/ecommerce.png";
 
 export const projects = [
   {
     id: 1,
+    image: image_12,
+    title: "E-commerce Store",
+    description:
+      "A full-stack e-commerce platform built with ASP.NET Core and React, designed to provide a complete online shopping experience with product management, variants, orders, store customization, authentication, multilingual support, analytics, and Meta product feed integration. The platform includes a comprehensive admin dashboard for managing the store and its content, while providing customers with a modern and responsive shopping experience.",
+
+    features: [
+      "Complete Product, Category & Variant Management",
+      "Order Management & Customer Shopping Experience",
+      "Store, Banner, Page & Testimonial Management",
+      "Secure Authentication with Google Sign-In",
+      "Arabic & English Multilingual Support",
+      "Seasonal Effects & Custom Visual Experiences",
+      "Google Analytics Integration",
+      "Meta Product Feed & Catalog Integration",
+      "Reliable Image Upload & Background Cleanup System",
+    ],
+
+    problemSolved:
+      "Provides a complete and scalable solution for managing an online store, replacing fragmented manual processes with centralized product, content, customer, and order management while integrating external platforms for analytics and product distribution.",
+
+    githubLink: null,
+    liveLink: "https://system-store-neon.vercel.app/",
+
+    tools: [
+      {
+        icon: <SiDotnet color="#512BD4" />,
+        name: "ASP.NET Core",
+      },
+      {
+        icon: <SiNextdotjs color="#FFFFFF" />,
+        name: "Next.js",
+      },
+      {
+        icon: <SiReact color="#61DAFB" />,
+        name: "React",
+      },
+      {
+        icon: <SiTypescript color="#3178C6" />,
+        name: "TypeScript",
+      },
+      {
+        icon: <SiTailwindcss color="#06B6D4" />,
+        name: "Tailwind CSS",
+      },
+      {
+        icon: <SiPostgresql color="#4169E1" />,
+        name: "PostgreSQL",
+      },
+      {
+        icon: <SiRedux color="#764ABC" />,
+        name: "Redux Toolkit",
+      },
+      {
+        icon: <SiMeta color="#0866FF" />,
+        name: "Meta",
+      },
+    ],
+  },
+  {
+    id: 2,
     image: image_10,
     title: "PulseTrack",
     description:
@@ -50,6 +116,10 @@ export const projects = [
     liveLink: "https://pulsetrack-orcin.vercel.app/",
     tools: [
       {
+        icon: <SiNextdotjs color="#FFFFFF" />,
+        name: "Next.js",
+      },
+      {
         icon: <FontAwesomeIcon icon={faReact} color="#61dafb" />,
         name: "React",
       },
@@ -64,7 +134,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: image_8,
     title: "TransLeb",
     description:
@@ -98,7 +168,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: image_2,
     title: "ECoNet",
     description:
@@ -135,7 +205,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     image: image_6,
     title: "BitwiseClub",
     description:
@@ -178,7 +248,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     image: image_11,
     title: "QR Digital Menu",
     description:
@@ -212,7 +282,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     image: image_5,
     title: "LiteChat",
     description:
@@ -246,7 +316,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     image: image_3,
     title: "ShirtMod3D",
     description:
@@ -275,11 +345,7 @@ export const projects = [
       },
       {
         icon: (
-          <img
-            src="threejs.png"
-            alt="threejs Logo"
-            style={{ width: "20px" }}
-          />
+          <img src="threejs.png" alt="threejs Logo" style={{ width: "20px" }} />
         ),
         name: "Three.js",
       },
@@ -291,7 +357,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     image: image_1,
     title: "Facebook Clone",
     description:

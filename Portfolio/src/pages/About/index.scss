@@ -123,8 +123,12 @@
               transition: all 0.3s ease;
               border: 1px solid transparent;
 
-              svg {
+              svg,
+              img {
                 font-size: 3.2rem;
+                width: 3.2rem;
+                height: 3.2rem;
+                object-fit: contain;
                 margin-bottom: 1.5rem;
               }
 

@@ -35,25 +35,12 @@ const About = () => {
               />
             </h1>
             <p>
-              I am a versatile Full Stack Developer with a deep-rooted passion
-              for building robust and interactive web applications. My expertise
-              spans the entire development lifecycle, from crafting
-              pixel-perfect frontend interfaces with React and Tailwind to
-              architecting scalable backend systems using Node.js, Express, and
-              MongoDB.
-            </p>
-            <p>
-              I thrive on the challenge of bridging the gap between design and
-              technology. My journey into development has been fueled by a
-              belief that everything connects—my background in data manipulation
-              with Python's Pandas gave me a structured foundation for database
-              management, while my experience with UI libraries helped me refine
-              my front-end intuition.
-            </p>
-            <p>
-              I don't just write code; I design systems that are secure,
-              maintainable, and built to evolve. Growth, to me, is a continuous
-              process of curiosity and humility.
+              Full-Stack Developer experienced with scalable, user-friendly web
+              applications. Skilled in structuring and maintaining clean,
+              consistent codebases, implementing scalable state management with
+              validators. Experienced in collaborating within teams, managing
+              codebases and workflows with Git, GitHub, and Jira, and leveraging
+              AI tools for productivity.
             </p>
           </div>
 
